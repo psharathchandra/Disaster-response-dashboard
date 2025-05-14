@@ -1,0 +1,116 @@
+.myContainer {
+    margin:auto;
+    width:1410px;
+}
+
+#AreaChart {
+    float: left;
+    width: 900px;
+    height: 400px;
+}
+
+#areaSVG {
+    width: 900px;
+    height: 400px;
+}
+
+#ChoroplethMap {
+    float: right;
+    width: 500px;
+    height: 400px;
+}
+
+#choroSVG {
+    width: 500px;
+    height : 350px;
+}
+
+#WordCloud {
+    float: left;
+    width: 950px;
+    height: 700px;
+}
+
+.wordSVG {
+    width: 950px;
+    height: 700px;
+}
+
+#SlopeGraph {
+    float: right;
+    width: 450px;
+    height: 370px;
+}
+
+#slopeSVG {
+    width: 450px;
+    height : 370px;
+}
+
+#BarChart {
+    float: right;
+    width: 450px;
+    height: 320px;
+}
+
+#barSVG {
+    width: 450px;
+    height : 320px;
+}
+
+
+#InnovativeView {
+    float: left;
+    width: 1410px;
+    height: 770px;
+}
+
+#networkSVG {
+    width: 1410px;
+    height: 780px;
+}
+
+.ToolTip {
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    display: inline-block;
+    padding: 10px;
+    font: 16px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+#msgviewertable{
+    height:200px;
+}
+
+#buttondiv{
+    position:sticky;
+    margin:0px 10px 0px 10px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    height: 2em;
+    top: 330px;
+}
+
+.table-responsive::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.table-responsive::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    border-radius: 10px;  
+    background-color: #ffffff; 
+}

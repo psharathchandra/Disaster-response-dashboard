@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/area.js"></script>
+        <script src="js/choropleth.js"></script>
+        <script src="js/word.js"></script>
+        <script src="js/slope.js"></script>
+        <script src="js/hashtag.js"></script>
+        <script src="js/network.js"></script>
+        <script src="js/spider.js"></script>
+    </head>
+    <body>
+        <div class="myContainer">
+            <h3 class="text-center">Voice From the People</h3>
+            <hr>
+            <div id="AreaChart" class="border border-dark rounded mb-2">
+                <div class="dropdown" style="float:right;margin:5px">
+                    <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        No keyword Selected
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton"></ul>
+                </div>
+                <svg id="areaSVG"></svg>
+            </div>
+            <div id="ChoroplethMap" class="border border-dark rounded mb-2">
+                <select class="form-select form-select-sm" id="choroSelect" style="width:auto;float:left;margin:5px" onchange="drawChoropleth()"></select>
+                <svg id="choroSVG"></svg>
+            </div>
+            <div id="WordCloud" class="border border-dark rounded carousel carousel-dark slide mb-2" data-bs-ride="carousel" data-bs-pause="hover">
+                <div class="carousel-inner"></div>
+                <button onclick="hidemsgviewer()" class="carousel-control-prev" type="button" data-bs-target="#WordCloud" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button onclick="hidemsgviewer()" class="carousel-control-next" type="button" data-bs-target="#WordCloud" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="ToolTip" id="wordcloudtooltip">
+                    <div id="buttondiv" class="row justify-content-start">
+                    <button onclick="hidemsgviewer()" type="button" class=" col-1 btn btn-sm btn-outline-danger"> <span aria-hidden="true">&times;</span></button>
+                    </div>
+                <div id="msgviewertable" class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Time</th>
+                            <th>Location</th>
+                            <th>Account</th>
+                            <th>Message</th>
+                          </tr>
+                        </thead>
+                        <tbody id="tableToolTipBody">
+                            
+                        </tbody>
+                      </table>
+
+                </div>
+            </div>
+            </div>
+            <div onclick="hidemsgviewer()" id="SlopeGraph" class="border border-dark rounded mb-2">
+                <svg id="slopeSVG"></svg>
+            </div>
+            <div onclick="hidemsgviewer()" id="BarChart" class="border border-dark rounded mb-2">
+                <svg id="barSVG"></svg>
+            </div>
+            <div onclick="hidemsgviewer()" id="InnovativeView" class="border border-dark rounded mb-2">
+                <svg id="networkSVG"></svg>
+            </div>
+        </div>
+    </body>
+</html>
