@@ -1,0 +1,19 @@
+{
+"earthquake" : ["seismic", "earthquake", "quake", "quaking", "shake", "shaking", "wobble", "wobbling", "quiver", "epicenter", "aftershock"],
+
+"fire" : ["fire", "smoke"],
+
+"flooding": ["tsunami", "flood"],
+
+"water": ["sewage", "water", "discharge", "drain", "irrigation", "sewer", "reservoir"],
+
+"energy": ["blackout",  "electric", "candle", "energy", "flashlight", "fuel", "gas", "generator", "nuclear", "power", "radiant", "radiation", "radio rays", "valve"],
+
+"medical" : ["ambulance", "blood", "bruise", "dehydrate", "emergency", "escape", "evacuate", "evacuating", "evacuation", "fatal", "first aid", "fracture",  "hurt", "illness", "infection", "injure", "lump", "medic", "red cross", "rescue", "rescuing", "respiratory", "suffering", "swollen", "urgent", "victim", "wound"],
+
+"shelter" : ["shelter", "housing", "building", "collapse", "construction", "house"],
+
+"transportation": ["bridge","traffic",  "congestion", "avalanche", "highway", "lane", "logistic", "jammed", "route", "street", "transportation"],
+
+"food": ["food"]
+}
